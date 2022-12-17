@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="shortcut icon" href="favicon.png" type="image/png">
+    <title>Erro! Go To Home</title>
+    <link rel="stylesheet" href="404.css">
+
+
+
+</head>
+
+<body>
+
+
+    <!---------------------
+      Navbar-Section-Tag
+    ---------------------->
+    <header class="header-section">
+        <nav class="navbar-section">
+            <a href="index.html" target="_blank" class="brand active"><img width="24px" src="favicon.png" alt="favicon"></a>
+            <ul class="list">
+                <li class="list-items"><a href="https://www.youtube.com/channel/UCmNQEXksre_goOBmcx0PMNQ"
+                        target="_blank"><i class="fa fa-youtube-play" aria-hidden="true"></i></a></li>
+                <li class="list-items"><a href="https://www.instagram.com/admin_codshub/" target="_blank"><i
+                            class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                <li class="list-items"><a href="#contact-form"><i class="fa fa-commenting" aria-hidden="true"></i></a>
+                </li>
+            </ul>
+            <div class="menu">
+                <span class="menu-bar"></span>
+                <span class="menu-bar"></span>
+                <span class="menu-bar"></span>
+            </div>
+        </nav>
+    </header>
+
+    <div class="errorContainer">
+        <img src="404-Free-Image(pngtree).png" alt="404-Free-Image(pngtree).png" >
+        <a href="index.html" target="_blank">Go to home</a>
+    </div>
+
+
+
+    <script>
+        // Mobile navigation Script
+let menuBtn = document.querySelector('.menu');
+let menuList = document.querySelector('.list');
+
+menuBtn.addEventListener('click', () => {
+  menuBtn.classList.toggle("active");
+  menuList.classList.toggle("active");
+});
+
+document.querySelectorAll(".list-items").forEach(n =>
+  n.addEventListener('click', () => {
+    menuBtn.classList.remove("active");
+    menuList.classList.remove("active");
+  }));
+
+    </script>
+</body>
+
+</html>

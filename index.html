@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb#" lang="en">
+
+<head>
+    <meta http-equiv=Content-Type content="text/html;charset=utf-8">
+    <meta content="IE=edge,chrome=1" http-equiv=X-UA-Compatible>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:image" content="http://codshub.com/ogEmage.png" >
+    <meta property="og:image:width" content="500" >
+    <meta property="og:image:height" content="500" >
+    <meta property="og:url" content="http://codshub.com" >
+    <meta property="og:site_name" content="codshub For Web Designer">
+    <meta property="og:type" content=website>
+    <meta property="og:title" content="Learn Coding Techniques - codshub.com">
+    <meta property="og:description"
+        content="codshub is my attempt to teach basics and those coding techniques to people in short time which took me ages to learn.">
+    <meta name="theme-color" content="#fff">
+    <meta name="author" content="@codshub">
+    <meta name="designer" content="@codshub">
+    <meta name="distribution" content="Global">
+    <meta name="MobileOptimized" content="320">
+    <meta name="language" content="en">
+    <meta name="robots" content="index, follow">
+    <meta name="rating" content="general">
+    <meta name="googlebot" content="index, follow">
+    <meta name="application-name" content="Blog @codshub">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name="keyword"
+        content="HTML, HTML5, CSS, CSS3, JavaScript, web development, html editor, live html editer, run html code online live, html entity, html hexa code, html hex code, html entity code, css entity, css hex code, css content code, css entity code, css entity hex code, css free project source code, html free project source code, JavaScript free project source code">
+    <title>Learn Coding Techniques - codshub.com</title>
+    <meta name="title" content="Learn Coding Techniques - codshub.com">
+    <meta name="description"
+        content="codshub is my attempt to teach basics and those coding techniques to people in short time which took me ages to learn.">
+    <link rel="shortcut icon" href="favicon.png" type="image/png">
+    <link rel="stylesheet" href="scsc.css">
+
+
+
+</head>
+
+<body>
+
+
+
+    <div class="preloader">
+        <div class="loader"></div>
+    </div>
+
+
+    <!---------------------
+      Navbar-Section-Tag
+    ---------------------->
+    <header class="header-section">
+        <nav class="navbar-section">
+            <a href="#" class="brand active"><img width="24px" src="./favicon.png" alt="favicon"></a>
+            <ul class="list">
+                <li class="list-items"><a href="https://www.youtube.com/channel/UCmNQEXksre_goOBmcx0PMNQ"
+                        target="_blank"><i class="fa fa-youtube-play" aria-hidden="true"></i></a></li>
+                <li class="list-items"><a href="https://www.instagram.com/admin_codshub/" target="_blank"><i
+                            class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                <li class="list-items"><a href="#contact-form"><i class="fa fa-commenting" aria-hidden="true"></i></a>
+                </li>
+            </ul>
+            <div class="menu">
+                <span class="menu-bar"></span>
+                <span class="menu-bar"></span>
+                <span class="menu-bar"></span>
+            </div>
+        </nav>
+    </header>
+
+    <!---------------------
+       Hero-Section-Tag
+    ---------------------->
+    <main class="hero-section">
+        <h1>Coding Techniques With codshub</h1>
+        <p>codshub is my attempt to teach basics and those coding techniques to people in short time which
+            took me ages to learn.</p>
+    </main>
+
+
+    <h1 class="post">Recent post</h1>
+    <section class="data-section">
+
+        <a href="Blog/Entities/Hex-code-html-Entites.html" target="_blank" class="data-btn data-1">
+            <img width="600px" src="Blog/img/icon-html5.png" alt="icon-html5">
+        </a>
+
+        <a href="Blog/Entities/Hex-code-css-Entites.html" target="_blank" class="data-btn data-2">
+            <img width="600px" src="Blog/img/icon-css3.png" alt="icon-css3">
+        </a>
+
+        <a href="Blog/EditLive/html-code.html" target="_blank" class="data-btn data-3">
+            <img width="600px" src="Blog/img/icon-html5.png" alt="icon-html5.png">
+        </a>
+
+        <a href="Blog/25Preloader/Pack.html" target="_blank" class="data-btn data-4">
+            <img width="600px" src="Blog/img/icon-css3.png" alt="icon-css3.png">
+        </a>
+
+    </section>
+
+
+
+
+
+    <p class="code-para">Write and run <span>HTML</span>, <span>CSS</span> and <span>JavaScript</span> code using
+        live online editor. This HTML editor updates the webview automatically in <span>real-time</span> as you
+        write code.</p>
+    <section class="code-editer">
+        <div class="content">
+
+            <iframe src="Blog/EditLive/html-code.html" frameborder="0" style="pointer-events: none;"></iframe>
+        </div>
+        <a href="Blog/EditLive/html-code.html" target="_blank" style="margin-top: 5rem;">Try editer</a>
+    </section>
+
+
+    <!---------------------
+       Form-Section-Tag
+    ---------------------->
+
+    <span id="contact-form"></span>
+    <section class="form-section">
+        <form class="form" action="https://formspree.io/f/xlevpkwk" method="POST">
+            <h1>Get Touch</h1>
+            <input type="text" name="Name" class="Name" placeholder="Full Name" autocomplete="off"
+                onkeyup="nameFunction()">
+            <span class="error name-error"></span>
+            <input type="text" name="Email" class="Email" placeholder="Email" autocomplete="off"
+                onkeyup="emailFunction()">
+            <span class="error email-error"></span>
+            <textarea name="Massage" class="Massage" placeholder="Type Feelings" autocomplete="off"
+                onkeyup="msgFunction()"></textarea>
+            <span class="error msg-error"></span>
+            <span class="error btn-error"></span>
+            <button type="submit" class="submit-btn" onclick="return submitFunction()">SUBMIT</button>
+
+        </form>
+    </section>
+
+    <!---------------------
+       Footer-Section-Tag
+    ---------------------->
+    <footer class="footer-section">
+        <h2>Thanks for visiting this site</h2>
+        <p>codshub is my attempt to teach basics and those coding techniques to people in short time which took me ages
+            to learn.</p>
+        <div class="social-icon">
+            <a href="https://www.facebook.com/profile.php?id=100083266806262" target="_blank"><i
+                    class="fa fa-facebook-square" aria-hidden="true"></i></a>
+            <a href="https://www.youtube.com/channel/UCmNQEXksre_goOBmcx0PMNQ" target="_blank"><i
+                    class="fa fa-youtube-play" aria-hidden="true"></i></a>
+            <a href="https://www.instagram.com/admin_codshub/" target="_blank"><i class="fa fa-instagram"
+                    aria-hidden="true"></i></a>
+            <a href="https://github.com/codshub" target="_blank"><i class="fa fa-github-square"
+                    aria-hidden="true"></i></a>
+        </div>
+    </footer>
+    <h5 class="codshub"><i class="fa fa-copyright" aria-hidden="true" style="font-weight: bold;"></i>2020-2022
+        <span>codshub.com</span>
+    </h5>
+
+    <script src="javasrc.js"></script>
+</body>
+
+</html>

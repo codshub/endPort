@@ -1,0 +1,200 @@
+@import url("https://fonts.googleapis.com/css2?family=Baloo+2&family=PT+Sans&display=swap");
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "PT Sans", sans-serif;
+  }
+  
+  body {
+    background: #f8f8f8;
+  }
+  
+
+  
+  :root {
+    --primary: #002036;
+    --primaryDark: #000b12;
+    --primaryPlan: #12272821;
+    --acent: #009dff;
+    --acentDark: #006cb4;
+    --acentPlan: #006cb125;
+    --para: #000000c2;
+  }
+  
+  .header-section {
+    width: 100%;
+    margin: auto;
+    position: relative;
+    z-index: 99999;
+  }
+  
+  .navbar-section {
+    width: 100%;
+    height: 4rem;
+    background: var(--primary) !important;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 99999;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 4rem;
+  }
+  
+  .navbar-section .brand {
+    filter: invert(100%);
+    display: inline;
+    width: 24px;
+    margin-top: 5px;
+  }
+  
+  .navbar-section .brand img {
+    width: 100%;
+  }
+  
+  .navbar-section .brand img:hover {
+    filter: invert(25%);
+  }
+  
+  .navbar-section .list {
+    display: flex;
+  }
+  
+  .navbar-section .list .list-items a {
+    display: inline;
+    font-size: 2.2rem;
+    color: #fff;
+    margin-right: 3.5rem;
+    font-weight: bold;
+    transition: transform 0.2s cubic-bezier(0.374, 0.019, 0.035, 1.2);
+  }
+  
+  .navbar-section .list .list-items a i:hover {
+    transform: scale(1.2);
+  }
+  
+  .navbar-section .list .list-items a:hover {
+    color: aqua;
+  }
+  
+  .navbar-section .menu {
+    display: none;
+    cursor: pointer;
+  }
+  
+  .navbar-section .menu .menu-bar {
+    display: block;
+    width: 2.6rem;
+    height: 3px;
+    margin: 5px auto;
+    background-color: #fff;
+    transition: all 0.5s ease-in-out;
+  }
+
+.errorContainer{
+   width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    margin-top: 6rem;
+    padding: 2rem;
+}
+
+.errorContainer img{
+  max-width: 450px;
+animation: anim 2s linear infinite;
+}
+@keyframes anim {
+  0%{
+    transform: rotateZ(-5deg);
+  }
+  50%{
+    transform: rotateZ(5deg);
+  }
+  100%{
+    transform: rotateZ(-5deg);
+  }
+}
+
+
+.errorContainer a{
+    text-align: center;
+    font-size: 2.4rem;
+    width: 200px;
+    margin: auto;
+    margin-top: 1rem;
+    color: #fff;
+    background: #002036;
+    border-radius: 80px;
+    box-shadow: 1px -1px 2px rgba(0, 0, 0, 0.5333333333);
+    font-family: "Baloo 2", cursive;
+    text-decoration: none;
+}
+.errorContainer a:hover{
+    box-shadow: none;
+}
+
+
+  
+@media (max-width: 720px) {
+    html {
+      font-size: 58.5%;
+    }
+    .header-section .navbar-section .menu {
+      display: block;
+    }
+    .navbar-section .menu .menu-bar {
+      display: block;
+    }
+    .navbar-section .menu.active .menu-bar:nth-child(2) {
+      opacity: 0;
+    }
+    .navbar-section .menu.active .menu-bar:nth-child(1) {
+      transform: translateY(8px) rotate(45deg);
+    }
+    .navbar-section .menu.active .menu-bar:nth-child(3) {
+      transform: translateY(-8px) rotate(-45deg);
+    }
+    .navbar-section .list {
+      position: fixed;
+      left: -100%;
+      top: 4rem;
+      flex-direction: column;
+      background-color: var(--primary);
+      width: 100%;
+      height: 50vh;
+      padding: 2rem 0;
+      padding: 0 0 0 3rem;
+      text-align: left;
+      transition: 0.3s;
+    }
+    .navbar-section .list .list-items {
+      display: block;
+      text-align: left;
+      margin: 3rem 0 0 3rem;
+      border-left: 1px dotted #fff;
+    }
+    .navbar-section .list .list-items a i {
+      font-size: 3.5rem;
+      margin-left: 1.5rem;
+    }
+    .navbar-section .list .list-items a i:hover {
+      transition: transform 0.5s cubic-bezier(0.374, 0.019, 0.035, 3);
+    }
+    .navbar-section .list .list-items a i:hover {
+      transform: scale(1.5);
+    }
+    .navbar-section .list.active {
+      left: 0;
+    }
+  }
