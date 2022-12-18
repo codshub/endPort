@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%
+}
+
+body {
+  background-color: #1A2E40;
+}
+
+.container {
+  display: block;
+  width: 100%;
+  margin: auto;
+  margin-top: 15rem;
+  margin-bottom: 3rem;
+  font-size: 11vmin;
+  color: #fff2;
+  font-family: 'Righteous', cursive;
+  position: relative;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+}
+
+.load span {
+  display: inline-block;
+  transition: all .5s;
+  animation: text-animate 1s infinite;
+  -webkit-animation: text-animate 1s infinite;
+  margin-right: 5px;
+}
+
+.load span:nth-child(1) {
+  animation-delay: .1s;
+  -webkit-animation-delay: .1s;
+}
+
+.load span:nth-child(2) {
+  animation-delay: .2s;
+  -webkit-animation-delay: .2s;
+
+}
+
+.load span:nth-child(3) {
+  animation-delay: .3s;
+  -webkit-animation-delay: .3s;
+
+}
+
+.load span:nth-child(4) {
+  animation-delay: .4s;
+  -webkit-animation-delay: .4s;
+
+}
+
+.load span:nth-child(5) {
+  animation-delay: .5s;
+  -webkit-animation-delay: .5s;
+
+}
+
+.load span:nth-child(6) {
+  animation-delay: .6s;
+  -webkit-animation-delay: .6s;
+
+}
+
+.load span:nth-child(7) {
+  animation-delay: .7s;
+  -webkit-animation-delay: .7s;
+
+}
+
+.load span:nth-child(8) {
+  animation-delay: .8s;
+  -webkit-animation-delay: .8s;
+}
+
+
+@keyframes text-animate {
+  0% {
+    transform: translateY(0);
+    margin-left: 0;
+  }
+
+  25% {
+    transform: translateY(-15px);
+    margin-left: 10px;
+    color: yellow;
+    text-shadow: 0 12px 4px rgba(0, 0, 0, .75)
+  }
+
+  100% {
+    transform: translateY(0);
+    margin-left: 0;
+
+  }
+}
+
+.load span {
+  animation-delay: .6s;
+  -webkit-animation-delay: .6s;
+}
+
+a {
+  display: block;
+  text-align: center;
+  max-width: 22rem;
+  margin: auto;
+  margin-top: 5rem;
+  text-decoration: none;
+  font-size: 2.4rem;
+  letter-spacing: 2px;
+  color: #1A2E40;
+  background-color: aqua;
+  padding: 7px 12px;
+  box-shadow: 2px 2px 4px #000;
+  border: 1px solid #000;
+  border-radius: 6px;
+  font-family: 'Righteous', cursive;
+}
+
+h1 {
+  display: block;
+  text-align: center;
+  font-size: 8vmin;
+  color: aliceblue;
+  letter-spacing: 2px;
+  font-family: 'Righteous', cursive;
+}
+
+a:hover {
+  text-shadow: 2px 2px 6px #000;
+}
