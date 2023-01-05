@@ -4,4 +4,4 @@ Disallow: /
 User-agent: *
 Allow: /
 
-Sitemap: https://www.codshub.com/sitemap.xml
+Sitemap: https://codshub.com/sitemap.xml
